@@ -1,0 +1,13 @@
+.container-about {
+    @extend .container;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $title-color;
+        margin-bottom: 50px;
+    }
+}
