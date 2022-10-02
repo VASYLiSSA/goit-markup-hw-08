@@ -1,9 +1,9 @@
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
+    @media screen and (max-width: 1199px) {
+    }
 
 .portfolio-link {
     display: block;
