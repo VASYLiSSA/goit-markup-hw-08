@@ -1219,7 +1219,6 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: none;
 }
 .mobile-menu .mobile-menu-container {
   height: 100%;
@@ -1295,6 +1294,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .social-person-list {
