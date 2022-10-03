@@ -159,13 +159,9 @@ address {
 
 .section-about {
   padding-top: 0px;
+  display: none;
 }
 
-@media screen and (max-width: 1199px) {
-  .container-about {
-    display: none;
-  }
-}
 .container-about__title {
   font-weight: 700;
   font-size: 36px;
@@ -236,7 +232,7 @@ address {
 @media screen and (max-width: 767px) {
   .hero .container-hero h1 {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.36;
   }
 }
 .hero .container-hero__title {
