@@ -153,8 +153,8 @@ address {
 }
 
 .section, .section-about {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .section-about {
@@ -189,7 +189,9 @@ address {
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/splash.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/splash.jpg);
 }
@@ -198,12 +200,14 @@ address {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/splash@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/splash@2x.jpg);
     height: 400px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/splash.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/splash.jpg);
+    background-size: cover;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -228,6 +232,12 @@ address {
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .hero .container-hero h1 {
+    font-size: 26px;
+    line-height: 42px;
+  }
 }
 .hero .container-hero__title {
   margin: 0 auto 30px auto;
@@ -335,7 +345,7 @@ address {
 .container-footer {
   gap: 50px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .container-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -351,6 +361,26 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -489,7 +519,13 @@ address {
   gap: 30px;
 }
 .portfolio-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .overlay {
@@ -805,6 +841,7 @@ address {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .feature-text {
@@ -1163,8 +1200,8 @@ address {
 
 .button-hamburger {
   position: absolute;
-  right: 10px;
-  top: 30px;
+  right: 15px;
+  top: 26px;
   z-index: 0;
   cursor: pointer;
   display: none;
@@ -1226,7 +1263,7 @@ address {
   font-weight: 500;
 }
 .mobile-menu .mobile-menu-contacts__tel {
-  font-size: 34px;
+  font-size: 26px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -1240,7 +1277,7 @@ address {
   text-decoration: none;
 }
 .mobile-menu .mobile-menu-social {
-  margin: 40px;
+  margin: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

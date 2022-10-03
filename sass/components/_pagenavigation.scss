@@ -47,8 +47,8 @@
 
 .button-hamburger {
     position: absolute;
-    right: 10px;
-    top: 30px;
+    right: 15px;
+    top: 26px;
     z-index: 0;
     cursor: pointer;
     display: none;
@@ -105,7 +105,7 @@
         font-weight: 500;
 
         &__tel {
-            font-size: 34px;
+            font-size: 26px;
             line-height: 40px;
             letter-spacing: 0.02em;
             color: #2196F3;
@@ -121,7 +121,7 @@
     }
 
     .mobile-menu-social {
-        margin: 40px;
+        margin: 7px;
         display: flex;
         gap: 5px;
 
@@ -142,3 +142,4 @@
 .mobile-menu.is-open {
     display: flex;
 }
+

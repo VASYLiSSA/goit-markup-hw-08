@@ -7,8 +7,9 @@
     padding-bottom: 200px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
-
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: linear-gradient(  rgba(47, 48, 58, 0.4),   rgba(47, 48, 58, 0.4)), url(../images/mobile/splash.jpg);
 
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -16,9 +17,11 @@
             screen and (min-resolution: 2dppx) and (max-width: 767px) {
             background-image: linear-gradient(  rgba(47, 48, 58, 0.4),   rgba(47, 48, 58, 0.4)), url(../images/mobile/splash@2x.jpg);
             height: 400px;
+            background-size: cover;
     }
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(  rgba(47, 48, 58, 0.4),   rgba(47, 48, 58, 0.4)), url(../images/tablet/splash.jpg);
+        background-size: cover;
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
             screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -39,7 +42,12 @@
         margin-left: auto;
         margin-right: auto;
 
-
+        h1 {
+            @media screen and (max-width: 767px) {
+                font-size: 26px;
+                line-height: 42px;
+            }
+        }
         &__title {
             margin: 0 auto 30px auto;
             font-weight: 900;
@@ -48,7 +56,7 @@
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: #FFFFFF;   
+            color: #FFFFFF;
         }
         
         &__button {
