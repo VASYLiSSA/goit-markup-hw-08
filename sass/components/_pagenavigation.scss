@@ -105,7 +105,7 @@
             color: #2196F3;
             text-decoration: none;
         }
-        
+
         &__email {
             font-size: 24px;
             line-height: 28px;
@@ -136,6 +136,9 @@
 
 .mobile-menu.is-open {
     display: flex;
-    display: none;
-}
+    @media  screen and  (min-width: 768px) {
+        display: none; 
+    }
+        
 
+}
