@@ -15,6 +15,7 @@
             screen and (min-resolution: 192dpi) and (max-width: 767px),
             screen and (min-resolution: 2dppx) and (max-width: 767px) {
             background-image: linear-gradient(  rgba(47, 48, 58, 0.4),   rgba(47, 48, 58, 0.4)), url(../images/mobile/splash@2x.jpg);
+            height: 400px;
     }
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(  rgba(47, 48, 58, 0.4),   rgba(47, 48, 58, 0.4)), url(../images/tablet/splash.jpg);
@@ -34,14 +35,12 @@
     }
 
     .container-hero {
-        width: 1200px;
         padding: 0px 15px;
         margin-left: auto;
         margin-right: auto;
 
 
         &__title {
-            width: 700px;
             margin: 0 auto 30px auto;
             font-weight: 900;
             font-size: 44px;

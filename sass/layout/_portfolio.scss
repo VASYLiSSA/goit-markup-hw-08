@@ -4,6 +4,7 @@
     gap: 30px;
     @media screen and (max-width: 1199px) {
     }
+}
 
 .portfolio-link {
     display: block;
@@ -55,6 +56,22 @@
 }
 
 
+.portfolio-item {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+
+    &__image {  
+        width: 100%; 
+    }
+}
+
 .portfolio-item:nth-child(3n) {  
     margin-right: 0;
 }
@@ -75,6 +92,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px) {
+        justify-content: left;
+    }
 }
 
 

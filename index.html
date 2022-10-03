@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Website</title>
 </head>
-<body>
+<body no-scroll>
     <header class="page-header">
         <div class="container header-box">
             <a class="logo" href="/"><span class="logo-accent">Web</span><span class="logo-dark">Studio</span></a>            
@@ -44,6 +44,42 @@
                 </li>
             </ul>
         </div>
+
+        <a class="button-hamburger" href="#" data-menu-open>
+            <svg class="icon-envelope" width="20" height="20">
+             <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+        </a>
+        <div class="mobile-menu" data-menu>
+            <button class="closed" data-menu-close ><svg width="11" height="11"><use href="./images/symbol-defs.svg#icon-Vector"></use></svg></button>
+
+            <nav class="mobile-menu-container">
+                <ul class="mobile-menu-navigation">
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="mobile-menu-navigation__itemk">
+                        <a class="mobile-menu-navigation__link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="/">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu-contacts">
+                <a class="mobile-menu-contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="mobile-menu-contacts__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+
+            <div class="mobile-menu-social">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
     </header>
 
 
@@ -181,15 +217,15 @@
 
                     <ul class="aboutlist">
                         <li class="aboutlist-element">
-                            <img class="aboutlist-element__image" src="images/aboutus1.jpg" alt="Service 1" />                            
+                            <img class="aboutlist-element__image" src="images/desktop/aboutus1.jpg" alt="Service 1" />                            
                             <p class="aboutlist-element__label">Десктопні додатки</p>
                         </li>
                         <li class="aboutlist-element">
-                            <img class="aboutlist-element__image" src="images/aboutus2.jpg" alt="Service 2" />
+                            <img class="aboutlist-element__image" src="images/desktop/aboutus2.jpg" alt="Service 2" />
                             <p class="aboutlist-element__label">Мобільні додатки</p>
                         </li>
                         <li class="aboutlist-element">
-                            <img class="aboutlist-element__image" src="images/aboutus3.jpg" alt="Service 3" />
+                            <img class="aboutlist-element__image" src="images/desktop/aboutus3.jpg" alt="Service 3" />
                             <p class="aboutlist-element__label">Дизайнерські рішення</p>
                         </li>
                     </ul>
