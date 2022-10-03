@@ -134,11 +134,15 @@
     }
 }
 
+.mobile-menu {
+    display: none;         
+}
+
 .mobile-menu.is-open {
+    transform: translateX(0);
     display: flex;
+
     @media  screen and  (min-width: 768px) {
         display: none; 
     }
-        
-
 }
