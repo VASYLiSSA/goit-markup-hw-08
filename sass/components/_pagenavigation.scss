@@ -73,8 +73,6 @@
     }
 
     .mobile-menu-navigation {
-        margin: 40px;
-        margin-top: 48px;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -83,7 +81,7 @@
         line-height: 47px;
         letter-spacing: 0.02em;
         gap: 32px;
-        height: 50%;
+        
 
         &__link {
             color: #212121;
@@ -92,11 +90,11 @@
     }
 
     .mobile-menu-contacts {
-        margin: 40px;
         display: flex;
         flex-direction: column;
         gap: 30px;
         font-weight: 500;
+        margin-bottom: 64px;
 
         &__tel {
             font-size: 26px;
@@ -116,14 +114,13 @@
     }
 
     .mobile-menu-social {
-        margin: 7px;
         display: flex;
         gap: 5px;
 
         a {
             font-weight: 500;
             font-size: 18px;
-            line-height: 22px;
+            line-height: 12px;
             text-decoration: none;
             color: var(--accent-color);
             &:not(:last-child) {
@@ -135,7 +132,8 @@
 }
 
 .mobile-menu {
-    display: none;         
+    display: none;
+    padding: 48px 40px;         
 }
 
 .mobile-menu.is-open {

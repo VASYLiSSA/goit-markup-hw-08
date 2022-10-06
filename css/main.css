@@ -181,8 +181,8 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,7 +224,7 @@ address {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/splash.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/splash.jpg);
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -238,7 +238,7 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero .container-hero h1 {
     font-size: 26px;
     line-height: 1.36;
@@ -348,7 +348,11 @@ address {
 }
 
 .container-footer {
-  gap: 50px;
+  gap: 60px;
+  min-width: 1200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .container-footer {
@@ -377,9 +381,8 @@ address {
     -webkit-box-align: top;
         -ms-flex-align: top;
             align-items: top;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -469,6 +472,7 @@ address {
 @media screen and (max-width: 1199px) {
   .footer-form input {
     width: 100%;
+    max-width: 450px;
   }
 }
 
@@ -978,6 +982,7 @@ address {
 @media screen and (max-width: 767px) {
   .modal {
     width: 100%;
+    max-width: 450px;
   }
 }
 
@@ -1233,8 +1238,6 @@ address {
   height: 100%;
 }
 .mobile-menu .mobile-menu-navigation {
-  margin: 40px;
-  margin-top: 48px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1248,14 +1251,12 @@ address {
   line-height: 47px;
   letter-spacing: 0.02em;
   gap: 32px;
-  height: 50%;
 }
 .mobile-menu .mobile-menu-navigation__link {
   color: #212121;
   text-decoration: none;
 }
 .mobile-menu .mobile-menu-contacts {
-  margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,6 +1266,7 @@ address {
           flex-direction: column;
   gap: 30px;
   font-weight: 500;
+  margin-bottom: 64px;
 }
 .mobile-menu .mobile-menu-contacts__tel {
   font-size: 26px;
@@ -1281,7 +1283,6 @@ address {
   text-decoration: none;
 }
 .mobile-menu .mobile-menu-social {
-  margin: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1290,7 +1291,7 @@ address {
 .mobile-menu .mobile-menu-social a {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 12px;
   text-decoration: none;
   color: var(--accent-color);
 }
@@ -1301,6 +1302,7 @@ address {
 
 .mobile-menu {
   display: none;
+  padding: 48px 40px;
 }
 
 .mobile-menu.is-open {
